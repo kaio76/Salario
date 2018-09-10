@@ -1,9 +1,5 @@
 
 import{Carro} from './carro';
-export class carro{
-  passageiros:number;
-  gasolina:number;
-  km:number;
   embarcar():void{
     if(this.passageiros >=2){
       alert("limite de pessoas atingido");
