@@ -5,7 +5,7 @@ export class Terc{
     private horasTrabalhadas: number;
 
     public constructor( horasTrabalhadas: number){
-        
+        super(nome, diaria);
         this.horasTrabalhadas = horasTrabalhadas;
     }
     public getHorasTrabalhadas():number{
@@ -25,11 +25,10 @@ export class Terc{
     return true;
   }
   }public InserirHorasTrab():void{
-    let horasTrabalhadas: number = readline.question("Digite horas trabalhadas");
+    
     }public calcSalario(insal:number, ):number{
       let salario:number = 4 * this.horasTrabalhadas + insal ;
       return salario; 
     }
 
   }
-  
