@@ -1,21 +1,17 @@
 import {Funcionario} from "./Funcionario";
 
-export class professor{
-    private diaria : number;
+export class Professor{
+
     private classe : string;
 
-    public constructor(diaria : number, classe : string){
-        this.diaria = diaria;
+    public constructor( classe : string){
+      super(nome, diaria);
         this.classe = classe;
     }
     public getClasse(): string{
       return this.classe;
     }public setClasse(classe:string):void{
       this.classe = classe;
-    } public getDiaria(): number{
-      return this.diaria;
-    }public setDiaria(diaria:number):void{
-      this.diaria = diaria;
     }
     //Métodos
     public calcSalario(classe : string,diaria:number):number{
